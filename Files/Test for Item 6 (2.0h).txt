@@ -1,0 +1,22 @@
+<DB>
+20:117
+</DB>
+
+;comment test3
+LDD first
+OUT
+LDI second
+OUT
+LDR #&1
+LDX second
+OUT
+LDM #'k'
+OUT
+END
+
+first: &4C
+second: &14
+third: 99
+;Program must display 'Luck'
+;Test for item 6 for hex, ASCII and 
+;symbolic operands

@@ -1,0 +1,14 @@
+<DB>
+65:70
+70:67
+71:64
+</DB>
+
+;Test code for CMI:
+
+LDM #67
+CMI 65 ;compare with contents in address 70 (#67)
+JPN 70 ;this line is skipped as result is True
+CMI 65 ;compare with contents in address 70 (#67)
+JPE 71 ;True and pointer should jump to 71
+END

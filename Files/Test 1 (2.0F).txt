@@ -1,0 +1,11 @@
+LDD first
+CMP ran
+JPE loop 
+OUT
+loop: ADD first
+OUT
+END
+first: 39
+ran: 36
+
+

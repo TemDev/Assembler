@@ -1,0 +1,18 @@
+<DB>
+65:65
+66:66
+67:67
+</DB>
+
+	LDM #200
+	SUB #10
+	SUB 65
+	SUB &42
+	END
+
+;Testing for SUB:
+
+;After LDM and each SUB, the ACC should show
+;C8, BE, 7D, 3B
+;in that order.
+;To check for bad operand, try SUB 3F.

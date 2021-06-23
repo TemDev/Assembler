@@ -1,0 +1,19 @@
+<DB>
+65:70
+75:84
+</DB>
+
+LDX 65 ; contents of addr &41
+OUT ; F
+
+LDM #10
+MOV IX ; copies value of 0A to the IX
+LDX 65 ; contents of addr &4B
+OUT ; T
+END
+
+;Test code for MOV:
+;The two OUTs should print
+;F and T respectively.
+;To check for bad operand, try MOV 3F.
+;Added check for empty operands in v2.0g

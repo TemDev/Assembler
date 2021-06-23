@@ -1,0 +1,13 @@
+LDD A
+OUT
+LDD b
+OUT
+LDD C
+OUT 
+END
+
+A: 65
+b: 98
+C: 67
+
+
