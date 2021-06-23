@@ -1,0 +1,83 @@
+Version 2.0a
+
+ITEM No.: 1a, 1b
+MODULES AFFECTED: syntax (currently named as instruction)
+
+	1. File syntax.py was changed for instruction.py, with all references updated, respectively
+	2. Added generation of HEXTOFUNCTIONDICT from OPCODETOHEXDICT
+
+Version 2.0b
+
+ITEM No.: 2
+MODULES AFFECTED: editor
+	
+	Allowed use of comments at the start of the line and part way through the line (";" as the comment delimeter)
+
+Version 2.0c
+
+ITEM No.: 3a
+MODULES AFFECTED: editor
+ASSOCIATED TERMS: DB Directive
+	
+	Allowed use of hex numbers for address and data values (& in front of value)
+
+Version 2.0C.1 (minor changes)
+
+ITEM No.: 3a
+MODULES AFFECTED: editor
+ASSOCIATED TERMS: DB Directive
+
+	Allowed use of comments in the DB Directive (inside <DB> </DB>)
+
+Version 2.0d 
+
+ITEM No.: 4, 5
+MODULES AFFECTED: assembler, editor, instruction
+
+	1. ADD instruction modified for immidiate addressing (instruction.py)
+	2. SUB instruction added for subtraction. Work for both immidiate addressing and direct adressing (instruction.py)
+	3. opCodeGroupC dictionary added for instructions that need both addressing modes (instruction.py)
+	4. Changes made to assembler.py and editor.py to differentiate address modes
+
+Version 2.0e 
+
+ITEM No.: 10
+MODULES AFFECTED: display, main, interpreter
+
+	The selected frequency value is now displayed on the screen
+
+Version 2.0f 
+
+ITEM No.: 9
+MODULES AFFECTED: assembler, editor
+
+	Allowed the use of labels to store data (i.e. a label followed by a data value instead of an instruction)
+
+Version 2.0g 
+
+ITEM No.: 5 and design
+MODULES AFFECTED: toolbar, editor, instruction
+
+	1. New design for save/load of the file
+	2. Exit button is implemented
+	3. Added support for the MOV and CMI instructions
+
+Version 2.0h
+
+ITEM No.: 2, 6
+MODULES AFFECTED: editor
+ASSOCIATED TERMS: Immediate addressing
+
+	1. Allowed use of hex and ASCII operands with immediate addressing mode
+	2. Allowed use of symbolic operands instead of numeric ones
+	3. Comments before <DB> can be added now
+
+Version 2.0i
+
+ITEM No.: 7
+MODULES AFFECTED: toolbar, instruction
+
+    Feature to display a list of supported op codes and the corresponding instructions (am item on "View" menu)
+
+
+
